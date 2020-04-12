@@ -1,0 +1,5 @@
+env:
+  FORCE_COLOR: '1'
+steps:
+  - label: :go:
+    command: ./.buildkite/index-go.sh github.com/efritz/watchdog

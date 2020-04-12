@@ -10,7 +10,7 @@ trap cleanup EXIT
 go get github.com/sourcegraph/lsif-go/cmd/lsif-go
 go get github.com/sourcegraph/src-cli/cmd/src
 
-git clone $1 $OUTPUT
-cd $OUTPUT
+git clone "https://$1.git" "$OUTPUT"
+cd "$OUTPUT"
 lsif-go
 src lsif upload

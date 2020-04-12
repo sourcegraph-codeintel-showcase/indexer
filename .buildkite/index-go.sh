@@ -13,4 +13,4 @@ go get github.com/sourcegraph/src-cli/cmd/src
 git clone $1 $OUTPUT
 cd $OUTPUT
 lsif-go
-src-cli lsif upload
+src lsif upload

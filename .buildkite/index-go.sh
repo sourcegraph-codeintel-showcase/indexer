@@ -2,6 +2,9 @@
 
 set -ex
 
+src version
+lsif-go --version
+
 OUTPUT=`mktemp -d -t sgdockerbuild_XXXXXXX`
 cleanup() {
     rm -rf "$OUTPUT"

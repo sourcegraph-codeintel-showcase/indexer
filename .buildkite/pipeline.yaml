@@ -1,20 +1,20 @@
 env:
   FORCE_COLOR: '1'
 steps:
-  - command: |
-    ./.buildkite/index-go.sh \
-      github.com/go-nacelle/awsutil \
-      github.com/go-nacelle/chevron \
-      github.com/go-nacelle/config \
-      github.com/go-nacelle/example \
-      github.com/go-nacelle/grpcbase \
-      github.com/go-nacelle/httpbase \
-      github.com/go-nacelle/lambdabase \
-      github.com/go-nacelle/log \
-      github.com/go-nacelle/nacelle \
-      github.com/go-nacelle/pgutil \
-      github.com/go-nacelle/process \
-      github.com/go-nacelle/scarf \
-      github.com/go-nacelle/service \
-      github.com/go-nacelle/workerbase
+  - command: >
+      ./.buildkite/index-go.sh
+        github.com/go-nacelle/awsutil
+        github.com/go-nacelle/chevron
+        github.com/go-nacelle/config
+        github.com/go-nacelle/example
+        github.com/go-nacelle/grpcbase
+        github.com/go-nacelle/httpbase
+        github.com/go-nacelle/lambdabase
+        github.com/go-nacelle/log
+        github.com/go-nacelle/nacelle
+        github.com/go-nacelle/pgutil
+        github.com/go-nacelle/process
+        github.com/go-nacelle/scarf
+        github.com/go-nacelle/service
+        github.com/go-nacelle/workerbase
     label: ':go:'

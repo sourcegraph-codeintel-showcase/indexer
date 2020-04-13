@@ -4,6 +4,7 @@ set -ex
 
 lsif-go --version
 which src
+src version
 
 OUTPUT=`mktemp -d -t sgdockerbuild_XXXXXXX`
 cleanup() {

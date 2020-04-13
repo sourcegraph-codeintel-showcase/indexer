@@ -11,4 +11,4 @@ trap cleanup EXIT
 git clone "https://$1.git" "$OUTPUT"
 cd "$OUTPUT"
 lsif-go
-src lsif upload
+SRC_ACCESS_TOKEN=$CODE_INTEL_SHOWCASE_SOURCEGRAPH_ACCESS_TOKEN src lsif upload

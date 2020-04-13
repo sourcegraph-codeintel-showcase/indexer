@@ -1,14 +1,12 @@
 #!/usr/bin/env bash
 
+set -ex
+
 OUTPUT=`mktemp -d -t sgdockerbuild_XXXXXXX`
 cleanup() {
     rm -rf "$OUTPUT"
 }
 trap cleanup EXIT
-
-# TODO - add to build agent instead
-go get github.com/sourcegraph/lsif-go/cmd/lsif-go
-go get github.com/sourcegraph/src-cli/cmd/src
 
 git clone "https://$1.git" "$OUTPUT"
 cd "$OUTPUT"
